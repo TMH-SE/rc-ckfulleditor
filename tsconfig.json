@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es5",
+    "lib": ["es2015", "dom"],
+    "outDir": "lib",
+    "declaration": true,
+    "jsx": "react",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "importsNotUsedAsValues": "preserve",
+    "allowJs": true,
+    "moduleResolution": "node",
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "strictNullChecks": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "skipLibCheck": true
+  },
+  "include": ["src"],
+  "exclude": [
+    "node_modules",
+    "lib",
+    "es",
+    "_bundles",
+    "example",
+    "webpack.config.ts",
+    ".eslinttrc.js",
+    ".prettierrc.js"
+  ],
+  "compileOnSave": false,
+  "buildOnSave": false
+}
