@@ -25,7 +25,14 @@ import React from 'react'
 import CKFullEditor from 'rc-ckfulleditor'
 
 const index = () => {
-  return <CKFullEditor />
+  return (
+    <CKFullEditor
+      onChange={(event, editor) => {
+        const data = editor.getData()
+        console.log({ event, editor, data })
+      }}
+    />
+  )
 }
 
 export default index
@@ -54,7 +61,7 @@ const index = () => {
 export default index
 ```
 
-### OR config upload image via your Upload Server  (use **CustomUpload** of [puff-puff](https://www.npmjs.com/package/puff-puff#custom-uploads))
+### OR config upload image via your Upload Server (use **CustomUpload** of [puff-puff](https://www.npmjs.com/package/puff-puff#custom-uploads))
 
 ```js
 import React from 'react'
